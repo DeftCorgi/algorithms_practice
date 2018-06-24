@@ -1,4 +1,4 @@
-from Graph import Graph, Vertex
+from ds.Graph import Graph, Vertex
 
 
 def create_word_ladder_graph(filename):
@@ -37,5 +37,5 @@ def test_bfs(filename, g):
 
 
 if __name__ == '__main__':
-    g = create_word_ladder_graph('word_ladder_dict.txt')
-    test_bfs('word_ladder_test.txt', g)
+    g = create_word_ladder_graph('files/init/word_ladder_dict.txt')
+    test_bfs('files/tests/word_ladder_test.txt', g)
