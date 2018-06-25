@@ -69,6 +69,9 @@ class Graph:
     def __iter__(self):
         return iter(self.vertices.values())
 
+    def __len__(self):
+        return len(self.getVertices)
+
 
 def test_bfs():
     g = Graph()
